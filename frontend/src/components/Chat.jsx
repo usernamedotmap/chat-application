@@ -14,7 +14,6 @@ const Chat = () => {
     selectedUser,
     listenToMessages,
     notListenToMessages,
-   
   } = useChatStore();
   const { authUser } = useAuthStore();
   const endMessage = useRef(null);

@@ -4,7 +4,7 @@ import { useAuthStore } from '../store/useAuthStore';
 import { CircleX } from 'lucide-react';
 
 const ChatHeader = () => {
-  const { selectedUser, setSelectedUser} = useChatStore();
+  const { selectedUser, setSelectedUsers}= useChatStore();
   const { onlineUsers} = useAuthStore();
   return (
     <div className='p-2.5 border-b-2 border-base-300'>
@@ -27,7 +27,7 @@ const ChatHeader = () => {
          
 
         </div>
-        <button onClick={() => setSelectedUser(null)}>
+        <button onClick={() => setSelectedUsers(null)}>
           <CircleX  className='size-7 text-base-content/80'  />
           </button>
       </div>

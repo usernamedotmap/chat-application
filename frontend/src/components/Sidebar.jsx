@@ -11,6 +11,7 @@ const Sidebar = () => {
   
   const {onlineUsers} = useAuthStore();
   const [showOnlineOnly, setshowOnlineOnly] = useState(false);
+  console.log("mga users", selectedUser);
 
   useEffect(() => {
     getUsers();
