@@ -59,9 +59,9 @@ const Chat = () => {
                   src={
                     message.senderId === authUser._id
                       ? authUser.profilePic ||
-                        "https://res.cloudinary.com/dmxyinyvi/image/upload/v1733423014/pgfphpxsdnuodrpecime.webp"
+                        "profile.png"
                       : selectedUser.profilePic ||
-                        "https://res.cloudinary.com/dmxyinyvi/image/upload/v1733423014/pgfphpxsdnuodrpecime.webp"
+                        "profile.png"
                   }
                   alt="pfp"
                  
